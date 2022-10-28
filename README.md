@@ -39,6 +39,7 @@ Using [Bundler](https://github.com/bundler/bundler):
 
 ```shell
 bundle install
+yarn install
 ```
 ### Initialize the database
 ```shell
