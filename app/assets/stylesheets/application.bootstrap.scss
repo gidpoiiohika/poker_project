@@ -1,2 +1,107 @@
+@font-face {
+  font-family: 'TT Norms Pro Medium';
+  src: url('TTNormsPro-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'TT Norms Pro Bold';
+  src: url('TTNormsPro-Bold.ttf');
+}
+
+.table-event-td {
+  padding-right: 0px !important;
+  text-align: center !important;
+}
+
+.text-transform {
+  text-transform: uppercase;
+}
+
+.leaderboard-asset {
+  background: url('/assets/Screen_bg.png');
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+}
+
+.leaderboard-asset-index {
+  background: url('/assets/poker-2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.container-table {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.header-bg {
+  display: flex;
+  background: linear-gradient(0deg, #C7C8C7 7.08%, #F8F9F9 91.98%);
+}
+
+.event-name {
+  font-family: 'TT Norms Pro Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.box-bg {
+  background: linear-gradient(0deg, #C7C8C7 -39.62%, #F8F9F9 100%);
+}
+
+.table-mb-0 {
+  margin-bottom: 0px !important;
+}
+
+.Color-Shaded {
+  background: url('/assets/Color_Shaded_1.png');
+  width: 1028px;
+  height: 143px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.icon-event-logo {
+  width: 211px;
+  height: 63px;
+}
+
+.icon-shaded {
+  width: 166px;
+  height: 166px;
+}
+
+.table-dark-player {
+  background: #333333;
+  font-family: 'TT Norms Pro Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 41px;
+  color: #FFFFFF !important;
+}
+
+.event-info-text {
+  font-family: 'TT Norms Pro Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+      
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';

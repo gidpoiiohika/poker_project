@@ -1,0 +1,32 @@
+<div class="leaderboard-asset" id="<%= dom_id @event %>">
+  <div class="container-table">
+    <div class="row">
+      <div class="header-bg">
+        <span class="event-logo"></span>
+        <div class="icon-event-logo">
+          <a href="#"><img src="/assets/Event_logo.png" alt=""></a>
+         </div>
+        <span class="event-name"><%= @event.name.gsub("SHRS Europe Ev", "") %></span>
+      </div>
+      <table class="table table-dark-player table-mb-0">
+        <tbody>
+          <% @event_players.each do |event_player| %>
+            <tr>
+              <td class="table-event-td text-transform"><%= event_player.place.ordinalize %></td>
+              <td class="text-transform"><%= event_player.full_name %></td>
+              <td><%= number_to_currency(event_player.prize_pool, unit: "$", separator: ",", precision: 0) %></td>
+            </tr>
+          <% end %> 
+        </tbody>
+      </table>
+      <div class="box-bg text-center event-info-text"><%= "#{@event.entrants} ENTRIES - #{number_to_currency(@event.prize_pool, unit: "$", separator: ",", precision: 0)} PRIZE POOL"%></div>
+      <div class="Color-Shaded">
+        <div class="icon-shaded">
+          <%= link_to root_path do %>
+            <%= image_tag "/assets/Sponsor_Large_5.png" %>
+          <% end %>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  root to: 'poker/assets/leaderboard/events#index'
+  
+  namespace :poker do
+    namespace :assets do
+      namespace :leaderboard do
+        resources :events, only: [:index, :show]
+      end
+    end
+  end
 end
