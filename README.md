@@ -41,6 +41,18 @@ Using [Bundler](https://github.com/bundler/bundler):
 bundle install
 yarn install
 ```
+You will also need to get OAuth2 credentials to access the spreadsheet from Ruby. 
+You can create a service account to do this with the following steps:
+
+- Go to the [Google APIs Console](https://console.cloud.google.com/apis/dashboard)
+- Create a new project.
+- Click Enable API. Search for and enable the Google Drive API.
+- Create credentials for a Web Server to access Application Data.
+- Name the service account and grant it a Project Role of Editor.
+- Download the JSON file.
+- Copy the JSON file to project directory and rename it to client_secret.json
+
+
 ### Initialize the database
 ```shell
 rails db:create db:migrate
