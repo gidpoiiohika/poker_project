@@ -42,10 +42,11 @@ bundle install
 ```
 ### Initialize the database
 ```shell
-rails db:create db:migrate 
+rails db:create db:migrate
+rake import_event_and_player:create_event_and_playeras
 ```
 
-- lib/tasks/import_event_and_player.rake [seed](https://github.com/gidpoiiohika/poker_project/blob/master/lib/tasks/import_event_and_player.rake#L1)
+- lib/tasks/import_event_and_player.rake [rake](https://github.com/gidpoiiohika/poker_project/blob/master/lib/tasks/import_event_and_player.rake#L1)
 
 ## Run rails server
 
