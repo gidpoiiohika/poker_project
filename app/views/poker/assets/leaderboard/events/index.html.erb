@@ -11,7 +11,7 @@
         <th scope="col">Date</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody class="event-index-cursor">
       <% @events.each.with_index(1) do |event, index| %>
         <tr onclick="location.href='<%= poker_assets_leaderboard_event_url(event) %>'">
           <td><%= index %></td>
